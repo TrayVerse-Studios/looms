@@ -1,3 +1,3 @@
-# looms.github.io
+# looms
 
 Website for my novel
