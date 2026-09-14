@@ -1,0 +1,49 @@
+title: Looms
+description: >-
+  A Helix City superhero novel. Richard Cox becomes the Weaver,
+  a probability-wielding hero pulled across the multiverse.
+url: "https://trayverse-studios.github.io"
+baseurl: "/looms"
+
+twitter_username: TrayVerseStds
+github_username: TrayVerse
+
+# Font for chapter body text only (not nav, titles, or other pages).
+# Keys: source-serif | narrator | remnant | cunarrator | comicnarrator | timelanguage
+chapter_font: narrator
+
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# GitHub Pages build
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  style: compressed

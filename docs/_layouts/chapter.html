@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign sorted = site.chapters | sort: "number" %}
+{% assign prev_num = page.number | minus: 1 %}
+{% assign next_num = page.number | plus: 1 %}
+{% assign prev = sorted | where: "number", prev_num | first %}
+{% assign next = sorted | where: "number", next_num | first %}
+{% assign chapter_font = page.font | default: site.chapter_font | default: "source-serif" %}
+
+<article class="chapter">
+  <header class="chapter-head">
+    <p class="eyebrow"><a href="{{ '/chapters/' | relative_url }}">Chapters</a> · {{ page.number }} of {{ sorted.size }}</p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="prose chapter-body font-{{ chapter_font }}">
+    {{ content }}
+  </div>
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div>
+      {% if prev %}
+        <a class="nav-link" href="{{ prev.url | relative_url }}">← Previous</a>
+        <p class="nav-title">{{ prev.title }}</p>
+      {% endif %}
+    </div>
+    <div class="nav-right">
+      {% if next %}
+        <a class="nav-link" href="{{ next.url | relative_url }}">Next →</a>
+        <p class="nav-title">{{ next.title }}</p>
+      {% endif %}
+    </div>
+  </nav>
+</article>

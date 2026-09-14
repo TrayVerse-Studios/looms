@@ -1,0 +1,15 @@
+﻿_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+.bundle/
+docs/Generating...
+docs/Destination:
+docs/Source:
+docs/Auto-regeneration:
+docs/Configuration
+docs/Incremental
+docs/Server
+docs/done
