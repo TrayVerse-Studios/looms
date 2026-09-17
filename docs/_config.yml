@@ -23,6 +23,8 @@ defaults:
       type: chapters
     values:
       layout: chapter
+      hidden: false
+      draft: false
   - scope:
       path: ""
     values:

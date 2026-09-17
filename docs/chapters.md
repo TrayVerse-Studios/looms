@@ -4,14 +4,14 @@ title: Chapters
 permalink: /chapters/
 ---
 
-Read the novel in order. New chapters go in `_chapters/` and show up here automatically.
+Read the novel in order.
 
 <ol class="chapter-list">
-{% assign sorted = site.chapters | sort: "number" %}
-{% for chapter in sorted %}
+{% assign visible = site.chapters | where_exp: "item", "item.hidden != true" | where_exp: "item", "item.draft != true" | sort: "number" %}
+{% for chapter in visible %}
   <li>
-    <a href="{{ chapter.url | relative_url }}">
-      <span class="num">{% if chapter.number < 10 %}0{% endif %}{{ chapter.number }}</span>
+    <a href="{{ chapter.url | relative_url }}" data-chapter-url="{{ chapter.url | relative_url }}">
+      <span class="num">{{ chapter.number }}</span>
       {{ chapter.title }}
     </a>
   </li>

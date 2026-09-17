@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
-{% assign sorted = site.chapters | sort: "number" %}
-{% assign prev_num = page.number | minus: 1 %}
-{% assign next_num = page.number | plus: 1 %}
-{% assign prev = sorted | where: "number", prev_num | first %}
-{% assign next = sorted | where: "number", next_num | first %}
+{% assign visible = site.chapters | where_exp: "item", "item.hidden != true" | where_exp: "item", "item.draft != true" | sort: "number" %}
 {% assign chapter_font = page.font | default: site.chapter_font | default: "source-serif" %}
+{% for chapter in visible %}
+  {% if chapter.url == page.url %}
+    {% unless forloop.first %}
+      {% assign prev_index = forloop.index0 | minus: 1 %}
+      {% assign prev = visible[prev_index] %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = visible[forloop.index] %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
 
-<article class="chapter">
+<article class="chapter" data-progress="true" data-title="{{ page.title | escape }}" data-number="{{ page.number }}">
   <header class="chapter-head">
-    <p class="eyebrow"><a href="{{ '/chapters/' | relative_url }}">Chapters</a> · {{ page.number }} of {{ sorted.size }}</p>
+    <p class="eyebrow"><a href="{{ '/chapters/' | relative_url }}">Chapters</a>{% unless page.hidden or page.draft %} · {{ page.number }} of {{ visible.size }}{% endunless %}</p>
     <h1>{{ page.title }}</h1>
+    {% if page.hidden or page.draft %}
+      <p class="draft-banner">In progress — hidden from the chapter list</p>
+    {% endif %}
   </header>
   <div class="prose chapter-body font-{{ chapter_font }}">
     {{ content }}

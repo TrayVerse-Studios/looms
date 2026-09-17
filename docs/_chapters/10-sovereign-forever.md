@@ -3,6 +3,7 @@ layout: chapter
 title: "Chapter 10 — Sovereign Forever"
 number: 10
 permalink: /chapters/10-sovereign-forever/
+draft: true
 ---
 
 In the centre of the pocket dimension’s main room, a rather large, circular table stood fixed. It was surrounded by advanced hoverchairs, all matching the black and gold aesthetic of the high-technology complex. Six teenagers sat in each chair of the round table as Trevor stood in front, facing them all.

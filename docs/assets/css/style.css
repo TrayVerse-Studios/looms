@@ -196,6 +196,18 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; color: var(--accent); }
 .prose p { margin: 0 0 1.1rem; }
 .prose p:last-child { margin-bottom: 0; }
 
+.draft-banner {
+  display: inline-block;
+  margin: 0 0 1.2rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--accent);
+  color: var(--accent-strong);
+  font-family: Syne, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .chapter-body {
   font-size: 1.12rem;
   max-width: 42rem;
@@ -268,4 +280,16 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; color: var(--accent); }
   .chapter-nav { grid-template-columns: 1fr; }
   .nav-right { text-align: left; }
   .brand-logo { height: 44px; }
+}
+
+.chapter-list a.is-current {
+  color: var(--accent-strong);
+}
+.chapter-list a.is-current::after {
+  content: " · reading";
+  font-family: Syne, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
 }

@@ -1,0 +1,4 @@
+# Overlay config for an itch.io HTML build.
+# itch serves the zip from a subdirectory, so do not use the GitHub Pages /looms prefix.
+url: ""
+baseurl: ""
