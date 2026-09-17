@@ -25,12 +25,12 @@ title: Home
 <div class="card-grid">
   <div class="card">
     <h2>Read</h2>
-    <p>{{ visible.size }} published chapter{% if visible.size != 1 %}s{% endif %}, from Helix City across the weave.</p>
+    <p>{{ visible.size }} published chapter{% if visible.size != 1 %}s{% endif %}.</p>
     <p><a href="{{ '/chapters/' | relative_url }}">Open the chapter list</a></p>
   </div>
   <div class="card">
     <h2>Characters</h2>
-    <p>The Weaver, Shadowbolt, Kangae, and the rest of the Helix roster.</p>
+    <p>The Weaver, Shadowbolt, Kangae, and the rest of the roster (very outdated and boring, will contain spoilers).</p>
     <p><a href="{{ '/characters/' | relative_url }}">Meet the cast</a></p>
   </div>
   <div class="card">
