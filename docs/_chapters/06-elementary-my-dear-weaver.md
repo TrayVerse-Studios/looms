@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 6 — Elementary, My Dear Weaver"
+title: "Elementary, My Dear Weaver"
 number: 6
-permalink: /chapters/06-elementary-my-dear-weaver/
+permalink: /chapters/06/
 ---
 
 “So that’s how you got here?” Ellery asked.

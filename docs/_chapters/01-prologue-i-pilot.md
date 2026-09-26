@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 1 — Prologue I: Pilot"
+title: "Prologue I: Pilot"
 number: 1
-permalink: /chapters/01-prologue-i-pilot/
+permalink: /chapters/01/
 ---
 
 “Who are you?” Ellery inquired in a mix of frustration and confusion as he stared at the hole in his establishment. “And why did you just crash through my roof?”

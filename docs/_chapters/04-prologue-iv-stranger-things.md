@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 4 — Prologue IV: Stranger Things"
+title: "Prologue IV: Stranger Things"
 number: 4
-permalink: /chapters/04-prologue-iv-stranger-things/
+permalink: /chapters/04/
 ---
 
 Richard phased into existence. He looked around, scanning the area.

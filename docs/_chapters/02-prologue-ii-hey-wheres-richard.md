@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 2 — Prologue II: Hey, Where’s Richard?"
+title: "Prologue II: Hey, Where’s Richard?"
 number: 2
-permalink: /chapters/02-prologue-ii-hey-wheres-richard/
+permalink: /chapters/02/
 ---
 
 It was a nice summer afternoon. The sun dominated the sky, casting its glow across the Tri-State Area skyline. In the backyard of a home in the suburban city of Danville sat two stepbrothers, Phineas Flynn and Ferb Fletcher, resting in the shade of a large oak tree with their duck-billed, beaver-tailed, teal-furred pet, Perry. The sun’s glare enriched the orange of Phineas’ striped shirt while Ferb's thick, shamrock-green hair blended into the leaves of their tree. The pair wondered what to do with their day. Now, walking into the yard was their sister, standing tall with her abnormally long neck.

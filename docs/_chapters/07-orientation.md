@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 7 — Orientation"
+title: "Orientation"
 number: 7
-permalink: /chapters/07-orientation/
+permalink: /chapters/07/
 ---
 
 |It was a new day, and the world was quiet. The sun’s auroral flare tinted the azure of the sky. Helix City was at peace. That lull was shattered by the shattering of glass at Helix Jewellers. Three motorcyclists climbed through the window with duffel bags.

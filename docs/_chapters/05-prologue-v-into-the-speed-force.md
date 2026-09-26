@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 5 — Prologue V: Into The Speed Force"
+title: "Prologue V: Into The Speed Force"
 number: 5
-permalink: /chapters/05-prologue-v-into-the-speed-force/
+permalink: /chapters/05/
 ---
 
 Richard stood in a tornado of lightning, a cosmic phenomenon like he had never seen. Thunder crackled around him as he tried to analyse his surroundings, wondering, “Where am I?” He feared taking a step, not knowing what dangers he might be vulnerable to. He levitated within the centre of the celestial vortex in stasis. The storm began to fade. Once it cleared, Richard was in a place he was more familiar with: “I'm home?” Richard walked through the streets, bouncing with glee as he embraced the feeling of home, but something was off. The streets were silent. The parks where children laughed and played were plagued by absence. The Ellery Diner, the busiest business in town, was deserted. He heard no one enjoying the sun. “Am I not home?” Richard inquired to himself. A voice answered, its southern British accent distinct from Richard’s American one: “Not quite.”

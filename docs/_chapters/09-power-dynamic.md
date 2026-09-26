@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 9 — Power Dynamic"
+title: "Power Dynamic"
 number: 9
-permalink: /chapters/09-power-dynamic/
+permalink: /chapters/09/
 ---
 
 It was an ordinary Friday afternoon in the delightful Helix City. The Foundry was lively as people roamed with joy and laughter. Trevor and Priya strolled peacefully down the path, walking side by side.

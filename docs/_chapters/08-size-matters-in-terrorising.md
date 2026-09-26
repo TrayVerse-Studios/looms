@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 8 — Size Matters (In Terrorising)"
+title: "Size Matters (In Terrorising)"
 number: 8
-permalink: /chapters/08-size-matters-in-terrorising/
+permalink: /chapters/08/
 ---
 
 Richard and Trevor strolled down the streets of Helix City at the crack of dawn. The sun peeked over the horizon, radiating the sky with amber tinges. Cool breezes chilled the pair in the lukewarm atmosphere. They were seemingly alone at this ungodly hour.

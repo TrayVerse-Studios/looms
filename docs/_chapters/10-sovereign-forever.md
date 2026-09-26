@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 10 — Sovereign Forever"
+title: "Sovereign Forever"
 number: 10
-permalink: /chapters/10-sovereign-forever/
+permalink: /chapters/10/
 draft: true
 ---
 

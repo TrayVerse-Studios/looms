@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: "Chapter 3 — Prologue III: My Name Is Richard Cox"
+title: "Prologue III: My Name Is Richard Cox"
 number: 3
-permalink: /chapters/03-prologue-iii-my-name-is-richard-cox/
+permalink: /chapters/03/
 ---
 
 “So, what happened next?” Ellery asked, intrigued.
