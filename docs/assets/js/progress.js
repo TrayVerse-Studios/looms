@@ -79,7 +79,7 @@
       }
       var label = el.querySelector("[data-continue-label]");
       if (label) {
-        label.textContent = saved.title || "Continue reading";
+        label.textContent = "Chapter " + saved.number + " — " + saved.title || "Continue reading";
       }
     }
     for (var s = 0; s < startLinks.length; s++) {

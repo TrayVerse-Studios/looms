@@ -12,7 +12,7 @@ title: Home
   <p class="lede">Richard Cox was perfectly ordinary until he was pulled across four realities and returned with ambiguous power. Now he's the Weaver, Helix City's most unlikely hero—and the person least equipped to hold a broken world together.</p>
   <div class="actions">
     <a class="btn" href="#" hidden data-continue>
-      Continue <span data-continue-label>reading</span>
+      Continue reading <span data-continue-label></span>
     </a>
     {% if first_chapter %}
       <a class="btn" data-start href="{{ first_chapter.url | relative_url }}">Start from the beginning</a>
