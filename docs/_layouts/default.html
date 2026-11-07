@@ -8,12 +8,13 @@
     data-site-id="trayverse-studios-mw6j627p">
   </script>
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/cover_art.png">
+  <link rel="icon" type="image/x-icon" href="{{ 'assets/images/cover_art.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% seo %}
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
   {% include header.html %}
@@ -21,6 +22,9 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script src="{{ '/assets/js/auth.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/comments.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/drafts.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/progress.js' | relative_url }}"></script>
 </body>
 </html>

@@ -293,3 +293,211 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; color: var(--accent); }
   text-transform: uppercase;
   color: var(--accent);
 }
+
+/* Auth & user area */
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: auto;
+  font-family: Syne, sans-serif;
+  font-size: 0.85rem;
+}
+.header-username {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  max-width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.auth-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.auth-btn:hover { border-color: var(--accent); color: var(--accent-strong); }
+
+.auth-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.auth-card {
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  width: min(380px, 90vw);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+.auth-card h2 { margin: 0 0 1rem; font-size: 1.3rem; }
+.auth-card label { display: block; margin-bottom: 0.8rem; font-size: 0.85rem; }
+.auth-card input {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.45rem 0.5rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 4px;
+  font: inherit;
+}
+.auth-hint, .auth-error { font-size: 0.78rem; color: var(--muted); margin: 0.4rem 0; }
+.auth-error { color: var(--accent-strong); }
+.auth-actions { display: flex; gap: 0.5rem; margin-top: 0.8rem; }
+.auth-actions button {
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+.auth-actions button[type="submit"] { background: var(--accent); color: #fff; }
+.auth-actions .cancel { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+
+/* Comments */
+.comments {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.comments h2 { margin-bottom: 1rem; }
+.comment-list { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+.comment {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.comment-author { font-family: Syne, sans-serif; }
+.comment-time { font-size: 0.75rem; color: var(--muted); margin-left: 0.4rem; }
+.comment p { margin: 0.4rem 0 0; }
+.comment-empty { color: var(--muted); }
+.comment-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 4px;
+  font: inherit;
+  resize: vertical;
+}
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.comment-actions button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+.comment-as { font-size: 0.85rem; color: var(--muted); }
+.draft-tag { font-size: 0.7rem; color: var(--muted); font-family: Syne, sans-serif; }
+
+@media (max-width: 640px) {
+  .user-area { margin-left: 0; margin-top: 0.4rem; }
+  .bar { flex-wrap: wrap; }
+}
+
+/* Votes & replies */
+.chapter-votes { margin: 1.2rem 0 1.8rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.vote-btn, .reply-btn, .edit-btn, .delete-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-family: Syne, sans-serif;
+}
+.vote-btn[data-active="1"] { border-color: var(--accent); color: var(--accent-strong); }
+.comment-controls { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.3rem; }
+.reply-box { margin-top: 0.5rem; }
+.reply-box textarea { width: 100%; margin-bottom: 0.3rem; }
+.comment-replies { list-style: none; padding: 0; margin: 0.4rem 0 0; }
+
+/* Polished reply form (matches main comment form) */
+.reply-box .comment-form {
+  margin-top: 0.6rem;
+}
+.reply-box .comment-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 4px;
+  font: inherit;
+  resize: vertical;
+}
+.reply-box .comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.reply-box .comment-actions button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Collapse threads */
+.comment-header {
+  cursor: pointer;
+  user-select: none;
+}
+.comment-header:hover .comment-author {
+  text-decoration: underline;
+}
+.collapse-indicator {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-left: 0.35rem;
+}
+.comment.is-collapsed > .comment-replies,
+.comment.is-collapsed > .reply-box {
+  display: none;
+}
+
+/* Inline edit form */
+.edit-form { margin-top: 0.5rem; }
+.edit-form .cancel-edit {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+.comment-body code, .comment-body pre {
+  background: var(--bg-raise);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.comment-body pre { padding: 0.6rem; overflow-x: auto; }
+.comment-body a { color: var(--accent); }
