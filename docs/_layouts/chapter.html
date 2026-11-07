@@ -18,7 +18,7 @@ layout: default
 <article class="chapter" data-progress="true" data-title="{{ page.title | escape }}" data-number="{{ page.number }}">
   <header class="chapter-head">
     <p class="eyebrow"><a href="{{ '/chapters/' | relative_url }}">Chapters</a>{% unless page.hidden or page.draft %} · {{ page.number }} of {{ visible.size }}{% endunless %}</p>
-    <h1>{{ page.title }}</h1>
+    <h1>Chapter {{ page.number }} — {{ page.title }}</h1>
     {% if page.hidden or page.draft %}
       <p class="draft-banner">In progress — hidden from the chapter list</p>
     {% endif %}
@@ -30,13 +30,13 @@ layout: default
     <div>
       {% if prev %}
         <a class="nav-link" href="{{ prev.url | relative_url }}">← Previous</a>
-        <p class="nav-title">{{ prev.title }}</p>
+        <p class="nav-title">Chapter {{ prev.number }} — {{ prev.title }}</p>
       {% endif %}
     </div>
     <div class="nav-right">
       {% if next %}
         <a class="nav-link" href="{{ next.url | relative_url }}">Next →</a>
-        <p class="nav-title">{{ next.title }}</p>
+        <p class="nav-title">Chapter {{ next.number }} — {{ next.title }}</p>
       {% endif %}
     </div>
   </nav>

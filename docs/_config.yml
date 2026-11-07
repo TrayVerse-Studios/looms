@@ -45,7 +45,7 @@ exclude:
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true
 
 sass:
   style: compressed
