@@ -20,7 +20,7 @@ const fs = require("fs");
 const path = require("path");
 const { createClient } = require("@supabase/supabase-js");
 
-const CHAPTERS_DIR = path.resolve(__dirname, "../docs/_chapters");
+const CHAPTERS_DIR = path.join(process.cwd(), 'docs/_chapters');
 
 function extractFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
