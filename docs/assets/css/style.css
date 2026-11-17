@@ -213,19 +213,38 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; color: var(--accent); }
   max-width: 42rem;
   font-family: "Source Serif 4", Georgia, serif;
 }
-
-.chapter-body.font-source-serif { font-family: "Source Serif 4", Georgia, serif; }
-.chapter-body.font-narrator { font-family: "Narrator", "Open Sans", sans-serif; }
-.chapter-body.font-remnant { font-family: "Remnant", sans-serif; }
-.chapter-body.font-cunarrator { font-family: "CUNarrator", "Comic Neue", cursive; }
-.chapter-body.font-comicnarrator { font-family: "Comic Narrator", "Comic Relief", cursive; }
-.chapter-body.font-timelanguage { font-family: "timelang", monospace; }
-
+/*
 .narrator { font-family: "Narrator", "Open Sans", sans-serif; }
 .remnant { font-family: "Remnant", sans-serif; }
 .cunarrator { font-family: "CUNarrator", "Comic Neue", cursive; }
 .comicnarrator { font-family: "Comic Narrator", "Comic Relief", cursive; }
 .timelanguage { font-family: "timelang", monospace; }
+
+.chapter-body.font-source-serif { font-family: "Source Serif 4", Georgia, serif; }
+.chapter-body.font-narrator { class: "narrator"; }
+.chapter-body.font-remnant { class: "remnant"; }
+.chapter-body.font-cunarrator { class: "cunarrator"; }
+.chapter-body.font-comicnarrator { class: "comicnarrator"; }
+.chapter-body.font-timelanguage { class: "timelanguage"; }
+*/
+
+
+.chapter-body.font-source-serif { font-family: "Source Serif 4", Georgia, serif; }
+
+.narrator,
+.chapter-body.font-narrator { font-family: "Narrator", "Open Sans", sans-serif; }
+
+.remnant,
+.chapter-body.font-remnant { font-family: "Remnant", sans-serif; }
+
+.cunarrator,
+.chapter-body.font-cunarrator { font-family: "CUNarrator", "Comic Neue", cursive; }
+
+.comicnarrator,
+.chapter-body.font-comicnarrator { font-family: "Comic Narrator", "Comic Relief", cursive; }
+
+.timelanguage,
+.chapter-body.font-timelanguage { font-family: "timelang", monospace; }
 
 .chapter-nav {
   display: grid;
@@ -501,3 +520,18 @@ h2 { font-size: 1.35rem; margin: 2rem 0 0.6rem; color: var(--accent); }
 }
 .comment-body pre { padding: 0.6rem; overflow-x: auto; }
 .comment-body a { color: var(--accent); }
+
+/* Release time display */
+.release-time {
+  font-size: 0.85rem;
+  color: var(--muted, #666);
+  margin: 0.25rem 0 0.75rem;
+}
+.future-banner {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}

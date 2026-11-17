@@ -37,3 +37,7 @@ docs/Configuration
 docs/Incremental
 docs/Server
 docs/done
+node_modules/
+sync.bat
+*/sql
+*.sql

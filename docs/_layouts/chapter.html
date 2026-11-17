@@ -15,13 +15,19 @@ layout: default
   {% endif %}
 {% endfor %}
 
-<article class="chapter" data-progress="true" data-title="{{ page.title | escape }}" data-number="{{ page.number }}">
+{% assign rel_date = page.release_date | default: site.time | date: "%Y-%m-%d" %}
+{% assign rel_time = page.release_time | default: "00:00" %}
+{% assign rel_offset = page.timezone_offset | default: 0 %}
+
+<article class="chapter" data-progress="true" data-title="{{ page.title | escape }}" data-number="{{ page.number }}" data-slug="{{ page.slug | default: page.name | remove: '.md' }}" data-release-date="{{ rel_date }}" data-release-time="{{ rel_time }}" data-timezone-offset="{{ rel_offset }}"{% if page.hidden or page.draft %} data-restricted="true" data-notfound="{{ '/404.html' | relative_url }}"{% endif %}>
   <header class="chapter-head">
     <p class="eyebrow"><a href="{{ '/chapters/' | relative_url }}">Chapters</a>{% unless page.hidden or page.draft %} · {{ page.number }} of {{ visible.size }}{% endunless %}</p>
     <h1>Chapter {{ page.number }} — {{ page.title }}</h1>
+    <p class="release-time" aria-live="polite">Released: <span class="local-release-time">…</span></p>
     {% if page.hidden or page.draft %}
       <p class="draft-banner">In progress — hidden from the chapter list</p>
     {% endif %}
+    <p class="future-banner" hidden>Scheduled for future release</p>
   </header>
   <div class="prose chapter-body font-{{ chapter_font }}">
     {{ content }}

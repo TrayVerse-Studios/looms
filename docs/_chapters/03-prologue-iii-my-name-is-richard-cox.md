@@ -2,7 +2,13 @@
 layout: chapter
 title: "Prologue III: My Name Is Richard Cox"
 number: 3
-permalink: /chapters/03/
+permalink: /chapters/03-prologue-iii-my-name-is-richard-cox/
+redirect_from:
+    - /chapters/03/
+    - /chapters/3/
+release_date: "2026-09-14"
+release_time: "06:48"
+timezone_offset: 1
 ---
 
 “So, what happened next?” Ellery asked, intrigued.

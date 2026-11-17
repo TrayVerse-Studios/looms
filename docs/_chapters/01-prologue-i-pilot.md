@@ -2,7 +2,13 @@
 layout: chapter
 title: "Prologue I: Pilot"
 number: 1
-permalink: /chapters/01/
+permalink: /chapters/01-prologue-i-pilot/
+redirect_from:
+    - /chapters/01/
+    - /chapters/1/
+release_date: "2026-09-14"
+release_time: "06:48"
+timezone_offset: 1
 ---
 
 “Who are you?” Ellery inquired in a mix of frustration and confusion as he stared at the hole in his establishment. “And why did you just crash through my roof?”

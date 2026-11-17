@@ -2,8 +2,13 @@
 layout: chapter
 title: "Sovereign Forever"
 number: 10
-permalink: /chapters/10/
+permalink: /chapters/10-sovereign-forever/
+redirect_from:
+    - /chapters/10/
 draft: false
+release_date: "2026-11-07"
+release_time: "14:22"
+timezone_offset: 0
 ---
 
 In the centre of the pocket dimension’s main room, a rather large, circular table stood fixed. It was surrounded by advanced hoverchairs, all matching the black and gold aesthetic of the high-technology complex. Six teenagers sat in each chair of the round table as Trevor stood in front, facing them all.

@@ -2,7 +2,13 @@
 layout: chapter
 title: "Prologue IV: Stranger Things"
 number: 4
-permalink: /chapters/04/
+permalink: /chapters/04-prologue-iv-stranger-things/
+redirect_from:
+    - /chapters/04/
+    - /chapters/4/
+release_date: "2026-09-14"
+release_time: "06:48"
+timezone_offset: 1
 ---
 
 Richard phased into existence. He looked around, scanning the area.

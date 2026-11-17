@@ -2,7 +2,13 @@
 layout: chapter
 title: "Elementary, My Dear Weaver"
 number: 6
-permalink: /chapters/06/
+permalink: /chapters/06-elementary-my-dear-weaver/
+redirect_from:
+    - /chapters/06/
+    - /chapters/6/
+release_date: "2026-09-14"
+release_time: "06:48"
+timezone_offset: 1
 ---
 
 “So that’s how you got here?” Ellery asked.

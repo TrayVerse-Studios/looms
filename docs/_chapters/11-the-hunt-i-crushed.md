@@ -2,7 +2,9 @@
 layout: chapter
 title: "The Hunt I: Crushed"
 number: 11
-permalink: /chapters/11/
+permalink: /chapters/11-the-hunt-i-crushed/
+redirect_from:
+    - /chapters/11/
 draft: true
 ---
 

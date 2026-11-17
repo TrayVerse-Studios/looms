@@ -1,0 +1,53 @@
+name: Sync chapter release dates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/_chapters/**'
+      - 'docs/assets/js/sync-chapters.js'
+      - '.github/workflows/sync-chapters.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    # Avoid re-running on the bot's own commit
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install @supabase/supabase-js --no-save
+
+      - name: Run sync script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          # Optional: force a timezone for the runner (default is UTC on GitHub-hosted runners)
+          # TZ: Europe/London
+        run: node docs/assets/js/sync-chapters.js
+
+      - name: Commit filled frontmatter (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/_chapters/
+          if git diff --staged --quiet; then
+            echo "No frontmatter changes"
+          else
+            git commit -m "chore: fill missing chapter release dates [skip ci]"
+            git push
+          fi
